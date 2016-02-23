@@ -1,0 +1,12 @@
+doctype html
+html(ng-app='reddit')
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+  body(ng-controller="MyController")
+    header
+      img.logo(src='/images/reddit-logo.png')
+    block content
+    script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.2/angular.js')
+    script(type='text/javascript' src='/javascripts/ang.js')
